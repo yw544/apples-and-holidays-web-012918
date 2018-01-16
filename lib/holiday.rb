@@ -72,7 +72,8 @@ holiday_hash.each do |season, value|
   season = season.capitalize
   puts "#{season}:"
   value.each do |holiday, value|
-    holidday_name_array = holiday.to_s.split("_")
+    holiday_name_string = holiday.to_s
+    holidday_name_array = holiday_name_string.split("_")
     holidday_name_array.each do |word|
       word.capitalize!
     end
